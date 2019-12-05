@@ -36,7 +36,7 @@ module.exports = {
   output: {
     filename: 'js/[name].js',
     path: path.join(__dirname, 'docs'),
-    publicPath: '/'
+    publicPath: process.env.NODE_ENV === 'production' ? 'https://luckyrabbitfeet.github.io/MineSweeper/' : '/'
   },
   devtool: 'source-map',
   module: {
