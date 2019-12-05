@@ -1,0 +1,54 @@
+.select {
+  font-weight: bold;
+}
+
+.select > p {
+  display: inline-block;
+  background-color: #fff;
+  padding: 0 5px 0;
+  border-radius: 3px;
+  line-height: 2;
+}
+
+.dorp-icon {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 3px;
+  border-color: #303030 transparent;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  vertical-align: middle;
+}
+
+.select-menu {
+  position: absolute;
+  z-index: 1;
+  padding: 5px 0;
+  border-radius: 3px;
+  background-color: #fff;
+  visibility: hidden;
+}
+
+.select-menu ul {
+  list-style: none;
+  line-height: 28px;
+}
+
+.select-menu li {
+  padding: 0 28px;
+}
+
+.select-menu li:hover {
+  background-color: #ecf0f1;
+}
+
+.select-menu ul .selected::before {
+  content:'';
+  background:url("../../../images/checkmark2.png") no-repeat center/28px;
+  display:block;
+  width:28px;
+  height:28px;
+  position: absolute;
+  margin-left: -28px;
+}

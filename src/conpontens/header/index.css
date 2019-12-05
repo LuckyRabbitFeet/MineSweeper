@@ -1,0 +1,54 @@
+header {
+  background-color: #4A752C;
+}
+
+.header-wrapper {
+  margin: 0 auto 0;
+  padding: 0 8px 0;
+}
+
+.meun-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.meun-bar > div {
+  flex: 0 0 30%;
+}
+
+.meun-bar > div:nth-child(2) {
+  flex-grow: 1;
+}
+
+.flag-wrapper,
+.clock-wrapper {
+  width: 50%;
+}
+
+.flag-wrapper {
+  float: left;
+  text-align: right;
+}
+
+.clock-wrapper {
+  float: right;
+  text-align: left;
+}
+
+.features-wrapper {
+  float: right;
+}
+
+.close {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.close-icon {
+  display: block;
+  background: url('../../images/close_white_24dp.png') no-repeat center/30px;
+  width: 30px;
+  height: 30px;
+}

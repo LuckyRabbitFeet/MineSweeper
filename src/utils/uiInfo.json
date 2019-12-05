@@ -1,0 +1,14 @@
+{
+  "easy": {
+      "width": "450px",
+      "size": "45px"
+  },
+  "normal": {
+      "width": "540px",
+      "size": "30px"
+  },
+  "hard": {
+      "width": "600px",
+      "size": "25px"
+  }
+}

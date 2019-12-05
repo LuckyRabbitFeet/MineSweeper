@@ -1,0 +1,15 @@
+.clock {
+  padding: 0 3px;
+}
+
+.clock img {
+  height: 2rem;
+  vertical-align: middle;
+}
+
+.clock span {
+  padding-left: 3px;
+  color: #fff;
+  font-size: 20px;
+  vertical-align: middle;
+}

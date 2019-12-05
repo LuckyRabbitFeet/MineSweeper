@@ -1,0 +1,120 @@
+.block {
+  float: left;
+  border: 3px solid;
+  text-align: center;
+}
+
+.close-0 {
+  background: #AAD751;
+  border-color: #AAD751;
+}
+
+.close-1 {
+  background: #A2D149;
+  border-color: #A2D149;
+}
+
+/* .close-0:hover,
+.close-1:hover {
+  background: #B9DD77;
+  border-color: #B9DD77;
+} */
+
+.close-0:hover::before,
+.close-1:hover::before {
+  content: '';
+  display: block;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  margin-top: -3px;
+  margin-left: -3px;
+  background: #ffffff5c;
+}
+
+.flag {  
+  position: relative;
+}
+
+.flag::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  background: url('../../../images/flag_icon.png') no-repeat center/100%;
+  width: 100%;
+  height: 100%;
+}
+
+.boom::before {
+  content: '';
+  display: block;
+  position: relative;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background: #0000007F;
+}
+
+.open-0 {
+  background: #E5C29F;
+  border-color: #E5C29F;
+}
+
+.open-1 {
+  background: #D7B899;
+  border-color: #D7B899;
+}
+
+.mine-1 {
+  color: #1976D2;
+}
+
+.mine-2 {
+  color: #388E3C;
+}
+
+.mine-3 {
+  color: #D32F2F;
+}
+
+.mine-4 {
+  color: #7B1FA2;
+}
+
+.mine-5 {
+  color: #FF8F00;
+}
+
+.mine-6 {
+  color: #48E6F1;
+}
+
+.mine-7 {
+  color: #ED44B5;
+}
+
+.mine-8 {
+  color: #F4C20d;
+}
+
+.edge-top {
+  border-top-color: #87AF3A;
+}
+
+.edge-left {
+  border-left-color: #87AF3A;
+}
+
+.edge-right {
+  border-right-color: #87AF3A;
+}
+
+.edge-bottom {
+  border-bottom-color: #87AF3A;
+}
+
+.is-boom {
+  border-color: #000;
+}

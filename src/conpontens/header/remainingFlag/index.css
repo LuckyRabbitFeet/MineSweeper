@@ -1,0 +1,15 @@
+.remaining-flag {
+  padding: 0 3px;
+}
+
+.remaining-flag img {
+  height: 2rem;
+  vertical-align: middle;
+}
+
+.remaining-flag span {
+  padding-left: 3px;
+  color: #fff;
+  font-size: 20px;
+  vertical-align: middle;
+}
