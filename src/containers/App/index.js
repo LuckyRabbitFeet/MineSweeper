@@ -52,7 +52,7 @@ const App = (props) => {
         result:'remainMines',
         returnPoints: false
       }).count
-      if ((remainClose - remainMines) <= 0) {
+      if ((remainClose - remainMines) === 0) {
         gameVictory()
       }
       if (remainMines < gameLevel[level].mines) {
@@ -162,7 +162,7 @@ const App = (props) => {
         flag = (x, y, c) => (c === 9 && matrix[y][x] === blockTypes.close)
         break
       case 'remainClose':
-        flag = (x, y) => (matrix[y][x] === blockTypes.close)
+        flag = (x, y) => (matrix[y][x] === blockTypes.close || matrix[y][x] === blockTypes.flag)
         break
       default:
         throw 'getMinefielosInfo: result is not allowed value'
