@@ -9,9 +9,18 @@ import trophyIcon from '../../images/trophy_icon.png'
 
 import './index.css'
 
+let prevGameStatus = null
 const Finish = ({gameStatus, score, bestScore, onRestart}) => {
+  if (gameStatus !== gameStatusList.win
+    && gameStatus !== gameStatusList.lose
+  ) {
+    gameStatus = prevGameStatus
+  } else {
+    prevGameStatus = gameStatus
+  }
+  console.log(gameStatus)
   const classObj = classNames('finish-score', {
-    'win': gameStatus !== gameStatusList.lose,
+    'win': gameStatus === gameStatusList.win,
     'lose': gameStatus === gameStatusList.lose,
   })
   return (
