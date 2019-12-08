@@ -201,6 +201,11 @@ header {
   height: 100%;
 }
 
+.boom {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
 .boom::before {
   content: '';
   display: block;
